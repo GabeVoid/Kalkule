@@ -32,6 +32,9 @@ public class Geometria {
                 case 2: // Área do Quadrado
                     areaQuadrado();
                     break;
+                case 3: // Área do Retângulo
+                    areaRetangulo();
+                    break;
                 case 0:
                     System.out.println("Voltando...");
                     return;
@@ -55,6 +58,14 @@ public class Geometria {
         double l = scanner.nextDouble();
         double a = Math.pow(l, 2);
         System.out.println("Área: " + a);
+    }
+
+    private void areaRetangulo() {
+        System.out.print("Base: ");
+        double b = scanner.nextDouble();
+        System.out.print("Altura ");
+        double a = scanner.nextDouble();
+        System.out.println("Área: " + (a * b));
     }
 
     public static void mostrarMenuGeometria() {
